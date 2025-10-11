@@ -1,12 +1,41 @@
-# React + Vite
+# Age Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple single-page React app to calculate a person's age from their date of birth.
 
-Currently, two official plugins are available:
+## Features
+- Enter a date of birth and click "Calculate Age".
+- Reset input and result.
+- Displays age in years.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshot
+Add a screenshot of the app result at  `./screenshot.png` to show the calculated age.
 
-## Expanding the ESLint configuration
+Example (replace the path if you save the image elsewhere):
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Result screenshot](./Screenshot(73).png)
+
+To capture a screenshot on Windows:
+- Open the app (npm run dev → open http://localhost:5173).
+- Use Snipping Tool or press Win+Shift+S, save the image to `public/screenshot.png`.
+
+## Install & Run
+```sh
+npm install
+npm run dev
+```
+Open the URL shown by Vite (usually http://localhost:5173).
+
+## Build
+```sh
+npm run build
+```
+
+## Notes / Known issues
+- There is a small bug in `src/App.jsx`: the code uses `today.getData()` instead of `today.getDate()` when comparing days. Replace `today.getData()` with `today.getDate()` to fix the birthday comparison.
+- Date input relies on the browser's date control (ISO format).
+
+## Contributing
+Modify `src/App.jsx` to change UI or logic. Small single-file app — pull requests and fixes welcome.
+
+## License
+No license included. Add a LICENSE file if you plan to publish.
