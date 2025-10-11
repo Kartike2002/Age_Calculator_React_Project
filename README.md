@@ -12,7 +12,7 @@ Add a screenshot of the app result at  `./screenshot.png` to show the calculated
 
 Example (replace the path if you save the image elsewhere):
 
-![Result screenshot](./Screenshot(73).png)
+![Result screenshot](./public/Screenshot(73).png)
 
 To capture a screenshot on Windows:
 - Open the app (npm run dev → open http://localhost:5173).
